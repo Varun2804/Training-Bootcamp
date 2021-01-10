@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="sytle.css">
+    <title>My Calci</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Calculator</h1>
+        <form name="calculator">
+            <input class="form-control" name="result">
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                <input type="button" class="btn btn-secondary" value="%" onclick="Clickper()">
+                <input type="button" class="btn btn-secondary" value="(" onclick="Clickobr()">
+                <input type="button" class="btn btn-secondary" value=")" onclick="Clickcbr()">
+                <input type="button" class="btn btn-danger" value="AC" onclick="ClickAC()">
+
+
+               <input type="button" class="btn btn-secondary" value="7" onclick="Click7()">
+               <input type="button" class="btn btn-secondary" value="8" onclick="Click8()">
+               <input type="button" class="btn btn-secondary" value="9" onclick="Click9()">
+               <input type="button" class="btn btn-secondary" value="/" onclick="Clickdiv()">
+
+
+               <input type="button" class="btn btn-secondary" value="4" onclick="Click4()">
+               <input type="button" class="btn btn-secondary" value="5" onclick="Click5()">
+               <input type="button" class="btn btn-secondary" value="6" onclick="Click6()">
+               <input type="button" class="btn btn-secondary" value="*" onclick="Clickmul()">
+
+
+               <input type="button" class="btn btn-secondary" value="1" onclick="Click1()">
+               <input type="button" class="btn btn-secondary" value="2" onclick="Click2()">
+               <input type="button" class="btn btn-secondary" value="3" onclick="Click3()">
+               <input type="button" class="btn btn-secondary" value="-" onclick="Clickmin()">
+               <br>"
+
+                <input type="button" class="btn btn-secondary" value="0" onclick="Click0()">
+                <input type="button" class="btn btn-secondary" value="." onclick="Clickdot()">
+                <input type="button" class="btn btn-info" value="=" onclick="Clickeql()">
+                <input type="button" class="btn btn-secondary" value="+" onclick="Clickadd()">
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function Clickper(){
+            document.calculator.result.value += "%"
+        }
+        function Clickobr(){
+            document.calculator.result.value += "("
+        }
+        function Clickcbr(){
+            document.calculator.result.value += ")"
+        }
+        function ClickAC(){ 
+            document.calculator.result.value = ""}
+        function Click7(){
+            document.calculator.result.value += "7"}
+        function Click8(){
+            document.calculator.result.value += "8"}
+        function Click9(){
+            document.calculator.result.value += "9"}
+        function Clickdiv(){
+            document.calculator.result.value += "/"}
+        function Click4(){
+            document.calculator.result.value += "4"}
+        function Click5(){
+            document.calculator.result.value += "5"}
+        function Click6(){
+            document.calculator.result.value += "6"}
+        function Clickmul(){
+            document.calculator.result.value += "*"}
+        function Click1(){
+            document.calculator.result.value += "1"}
+        function Click2(){
+            document.calculator.result.value += "2"}
+        function Click3(){
+            document.calculator.result.value += "3"}
+        function Clickmin(){
+            document.calculator.result.value += "-"}
+        function Click0(){
+            document.calculator.result.value += "0"}
+        function Clickdot(){
+            document.calculator.result.value += "."}
+        function Clickeql(){
+            document.calculator.result.value = eval(calculator.result.value)}
+        function Clickadd(){
+            document.calculator.result.value += "+"}
+           
+
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
